@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/Rider2018.1/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_SimplePluginExample.756136034.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Editor" t="Include">
+          <e p="CardPropertyDrawer.cs" t="Include" />
+          <e p="IngredientDrawerUIE.cs" t="Include" />
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="BuletBehaviour.cs" t="Include" />
+          <e p="BulletConfig.cs" t="Include" />
+          <e p="CardSelector.cs" t="Include" />
+          <e p="Dealer.cs" t="Include" />
+          <e p="DeckofCards.cs" t="Include" />
+          <e p="Recipe.cs" t="Include" />
+          <e p="TestPlugin.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="SimplePluginExample.sln" t="IncludeFlat" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
