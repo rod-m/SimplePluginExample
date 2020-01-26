@@ -56,6 +56,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BuletBehaviour.cs" />
     <Compile Include="Assets\Scripts\BulletConfig.cs" />
+    <Compile Include="Assets\Scripts\CardGames.cs" />
+    <Compile Include="Assets\Scripts\CardGames\Card.cs" />
     <Compile Include="Assets\Scripts\CardSelector.cs" />
     <Compile Include="Assets\Scripts\Dealer.cs" />
     <Compile Include="Assets\Scripts\DeckofCards.cs" />
