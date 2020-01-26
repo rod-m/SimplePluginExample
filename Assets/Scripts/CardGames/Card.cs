@@ -16,7 +16,7 @@ namespace CardGame
         public string name;
         public Face face;
         public Suit suit;
-        public GameObject cardPrefab;
+        //public GameObject cardPrefab;
 
         public Card(Suit _suit, Face _face)
         {

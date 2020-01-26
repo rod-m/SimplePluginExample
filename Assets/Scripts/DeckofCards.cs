@@ -25,7 +25,7 @@ public class DeckofCards : ScriptableObject, ISerializationCallbackReceiver
 
     public void OnBeforeSerialize()
     {
-        GameObject cardPrefab = Resources.Load("cardPrefab") as GameObject;
+       
         deck = new List<Card>();
         int count = 0;
         foreach (var s in EnumUtil.GetValues<CardGame.Suit>())
@@ -33,7 +33,6 @@ public class DeckofCards : ScriptableObject, ISerializationCallbackReceiver
             foreach (var f in EnumUtil.GetValues<CardGame.Face>())
             {
                 Card card = new Card(s, f);
-                card.cardPrefab = cardPrefab;
                 deck.Add(card);
                 count++;
             }

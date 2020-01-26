@@ -69,52 +69,52 @@ using CardGame;
 
 //2
 
-    [CustomPropertyDrawer(typeof(Card))]
-    public class WavePropertyDrawer : PropertyDrawer
-    {
-
-        private const int spriteHeight = 50;
-
-        public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
-        {
-            EditorGUI.PropertyField(position, property, label, true);
-            // 1
-            if (property.isExpanded)
-            {
-                // 2
-                SerializedProperty enemyPrefabProperty = property.FindPropertyRelative("cardPrefab");
-                GameObject enemyPrefab = (GameObject) enemyPrefabProperty.objectReferenceValue;
-                // 3
-                if (enemyPrefab != null)
-                {
-                    SpriteRenderer enemySprite = enemyPrefab.GetComponentInChildren<SpriteRenderer>();
-
-                    // 4
-                    int previousIndentLevel = EditorGUI.indentLevel;
-                    EditorGUI.indentLevel = 2;
-                    // 5
-                    Rect indentedRect = EditorGUI.IndentedRect(position);
-                    float fieldHeight = base.GetPropertyHeight(property, label) + 2;
-                    Vector3 enemySize = Vector3.back; //enemySprite.transform.
-                    Rect texturePosition = new Rect(indentedRect.x, indentedRect.y + fieldHeight * 4,
-                        enemySize.x / enemySize.y * spriteHeight, spriteHeight);
-                    // 6
-                    EditorGUI.DropShadowLabel(texturePosition, new GUIContent(enemySprite.sprite.texture));
-                    // Animator anim = enemyPrefab.GetComponent<Animator>();
-                    // animationClip = anim.runtimeAnimatorController.animationClips[0];
-
-                    //   var a = EditorGUILayout.ObjectField(animationClip, typeof(AnimationClip), false) as AnimationClip;
-                    // 7
-                    EditorGUI.indentLevel = previousIndentLevel;
-                }
-            }
-
-
-        }
-
-        public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
-        {
-            return EditorGUI.GetPropertyHeight(property);
-        }
-
-    }
+//    [CustomPropertyDrawer(typeof(Card))]
+//    public class WavePropertyDrawer : PropertyDrawer
+//    {
+//
+//        private const int spriteHeight = 50;
+//
+//        public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+//        {
+//            EditorGUI.PropertyField(position, property, label, true);
+//            // 1
+//            if (property.isExpanded)
+//            {
+//                // 2
+//                SerializedProperty enemyPrefabProperty = property.FindPropertyRelative("cardPrefab");
+//                GameObject enemyPrefab = (GameObject) enemyPrefabProperty.objectReferenceValue;
+//                // 3
+//                if (enemyPrefab != null)
+//                {
+//                    SpriteRenderer enemySprite = enemyPrefab.GetComponentInChildren<SpriteRenderer>();
+//
+//                    // 4
+//                    int previousIndentLevel = EditorGUI.indentLevel;
+//                    EditorGUI.indentLevel = 2;
+//                    // 5
+//                    Rect indentedRect = EditorGUI.IndentedRect(position);
+//                    float fieldHeight = base.GetPropertyHeight(property, label) + 2;
+//                    Vector3 enemySize = Vector3.back; //enemySprite.transform.
+//                    Rect texturePosition = new Rect(indentedRect.x, indentedRect.y + fieldHeight * 4,
+//                        enemySize.x / enemySize.y * spriteHeight, spriteHeight);
+//                    // 6
+//                    EditorGUI.DropShadowLabel(texturePosition, new GUIContent(enemySprite.sprite.texture));
+//                    // Animator anim = enemyPrefab.GetComponent<Animator>();
+//                    // animationClip = anim.runtimeAnimatorController.animationClips[0];
+//
+//                    //   var a = EditorGUILayout.ObjectField(animationClip, typeof(AnimationClip), false) as AnimationClip;
+//                    // 7
+//                    EditorGUI.indentLevel = previousIndentLevel;
+//                }
+//            }
+//
+//
+//        }
+//
+//        public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
+//        {
+//            return EditorGUI.GetPropertyHeight(property);
+//        }
+//
+//    }

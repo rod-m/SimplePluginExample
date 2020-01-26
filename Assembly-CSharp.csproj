@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\CardSelector.cs" />
     <Compile Include="Assets\Scripts\Dealer.cs" />
     <Compile Include="Assets\Scripts\DeckofCards.cs" />
+    <Compile Include="Assets\Scripts\PlayerExample.cs" />
     <Compile Include="Assets\Scripts\Recipe.cs" />
     <Compile Include="Assets\Scripts\TestPlugin.cs" />
     <Reference Include="Unity.Timeline.Editor">

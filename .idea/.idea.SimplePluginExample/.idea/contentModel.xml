@@ -20,6 +20,7 @@
           <e p="CardSelector.cs" t="Include" />
           <e p="Dealer.cs" t="Include" />
           <e p="DeckofCards.cs" t="Include" />
+          <e p="PlayerExample.cs" t="Include" />
           <e p="Recipe.cs" t="Include" />
           <e p="TestPlugin.cs" t="Include" />
         </e>
